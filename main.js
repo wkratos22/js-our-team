@@ -40,15 +40,13 @@ var person = [
 console.log(person);
  
 for (let i = 0; i <= 6; i++){
-    for (let key in person[i]){
-        document.getElementById("infoContainer").innerHTML += `
-        <div class="card" style="width: 18rem;">
-            <img src="./img/${person[i]["img"]}" class="cardo-img-top" alt="propic">
-            <div class="card-body">
-                <h5 class="card-title">${person[i]["Nome"]}</h5>
-                <p class="card-title">${person[i]["ruolo"]}</p>
-            </div>
+    document.getElementById("infoContainer").innerHTML += `
+    <div class="card" style="width: 18rem;">
+        <img src="./img/${person[i]["img"]}" class="cardo-img-top" alt="propic">
+        <div class="card-body">
+            <h5 class="card-title">${person[i]["Nome"]}</h5>
+            <p class="card-title">${person[i]["ruolo"]}</p>
         </div>
-        `
-    }
+    </div>
+    `
 }
